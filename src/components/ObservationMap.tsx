@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useMemo, useRef } from 'react'
 import L from 'leaflet'
 import type { InatAreaBounds } from '../config'
 import type { InatObservation } from '../services/inat'
@@ -12,9 +12,14 @@ export function ObservationMap({ bounds, observations }: ObservationMapProps) {
   const mapElementRef = useRef<HTMLDivElement | null>(null)
   const mapInstanceRef = useRef<L.Map | null>(null)
   const layersRef = useRef<L.LayerGroup | null>(null)
+  const initializedRef = useRef(false)
 
-  const points = observations.filter(
-    (item) => item.latitude !== null && item.longitude !== null,
+  const points = useMemo(
+    () =>
+      observations.filter(
+        (item) => item.latitude !== null && item.longitude !== null,
+      ),
+    [observations],
   )
 
   useEffect(() => {
@@ -26,18 +31,20 @@ export function ObservationMap({ bounds, observations }: ObservationMapProps) {
       const map = L.map(mapElementRef.current)
       mapInstanceRef.current = map
 
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
         attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+          '&copy; OpenStreetMap contributors &copy; CARTO',
       }).addTo(map)
 
       layersRef.current = L.layerGroup().addTo(map)
     }
 
-    const map = mapInstanceRef.current
-    const markerLayer = layersRef.current
+    initializedRef.current = true
+  }, [])
 
-    if (!map || !markerLayer) {
+  useEffect(() => {
+    const map = mapInstanceRef.current
+    if (!map || !initializedRef.current) {
       return
     }
 
@@ -45,6 +52,15 @@ export function ObservationMap({ bounds, observations }: ObservationMapProps) {
       [bounds.swLat, bounds.swLng],
       [bounds.neLat, bounds.neLng],
     ])
+  }, [bounds])
+
+  useEffect(() => {
+    const map = mapInstanceRef.current
+    const markerLayer = layersRef.current
+
+    if (!map || !markerLayer) {
+      return
+    }
 
     markerLayer.clearLayers()
 
