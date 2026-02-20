@@ -1,4 +1,5 @@
-import { MapContainer, Popup, TileLayer, CircleMarker } from 'react-leaflet'
+import { useEffect, useRef } from 'react'
+import L from 'leaflet'
 import type { InatAreaBounds } from '../config'
 import type { InatObservation } from '../services/inat'
 
@@ -8,47 +9,73 @@ interface ObservationMapProps {
 }
 
 export function ObservationMap({ bounds, observations }: ObservationMapProps) {
+  const mapElementRef = useRef<HTMLDivElement | null>(null)
+  const mapInstanceRef = useRef<L.Map | null>(null)
+  const layersRef = useRef<L.LayerGroup | null>(null)
+
   const points = observations.filter(
     (item) => item.latitude !== null && item.longitude !== null,
   )
 
+  useEffect(() => {
+    if (!mapElementRef.current) {
+      return
+    }
+
+    if (!mapInstanceRef.current) {
+      const map = L.map(mapElementRef.current)
+      mapInstanceRef.current = map
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map)
+
+      layersRef.current = L.layerGroup().addTo(map)
+    }
+
+    const map = mapInstanceRef.current
+    const markerLayer = layersRef.current
+
+    if (!map || !markerLayer) {
+      return
+    }
+
+    map.fitBounds([
+      [bounds.swLat, bounds.swLng],
+      [bounds.neLat, bounds.neLng],
+    ])
+
+    markerLayer.clearLayers()
+
+    points.forEach((item) => {
+      const marker = L.circleMarker([item.latitude as number, item.longitude as number], {
+        radius: 5,
+        color: '#f36d00',
+        fillColor: '#f36d00',
+        fillOpacity: 0.85,
+      })
+
+      marker.bindPopup(
+        `<strong>${item.speciesName}</strong><br/>${item.commonName || '暂无中文名'}<br/>观察者：${item.userLogin}<br/><a href="${item.uri}" target="_blank" rel="noreferrer">打开 iNat 记录</a>`,
+      )
+
+      marker.addTo(markerLayer)
+    })
+  }, [bounds, points])
+
+  useEffect(() => {
+    return () => {
+      if (mapInstanceRef.current) {
+        mapInstanceRef.current.remove()
+        mapInstanceRef.current = null
+      }
+    }
+  }, [])
+
   return (
     <div className="map-wrap">
-      <MapContainer
-        key={bounds.key}
-        bounds={[
-          [bounds.swLat, bounds.swLng],
-          [bounds.neLat, bounds.neLng],
-        ]}
-        scrollWheelZoom
-        className="inat-map"
-      >
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-
-        {points.map((item) => (
-          <CircleMarker
-            key={item.id}
-            center={[item.latitude as number, item.longitude as number]}
-            radius={5}
-            pathOptions={{ color: '#f36d00', fillColor: '#f36d00', fillOpacity: 0.85 }}
-          >
-            <Popup>
-              <strong>{item.speciesName}</strong>
-              <br />
-              {item.commonName || '暂无中文名'}
-              <br />
-              观察者：{item.userLogin}
-              <br />
-              <a href={item.uri} target="_blank" rel="noreferrer">
-                打开 iNat 记录
-              </a>
-            </Popup>
-          </CircleMarker>
-        ))}
-      </MapContainer>
+      <div ref={mapElementRef} className="inat-map" />
     </div>
   )
 }
