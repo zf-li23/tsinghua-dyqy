@@ -12,6 +12,9 @@ interface RawObservation {
   uri: string
   observed_on: string
   species_guess: string | null
+  geojson: {
+    coordinates: [number, number]
+  } | null
   user: {
     login: string
   }
@@ -52,9 +55,18 @@ export interface InatObservation {
   speciesName: string
   commonName: string | null
   userLogin: string
+  latitude: number | null
+  longitude: number | null
   photos: Array<{
     url: string
   }>
+}
+
+export interface ObservationBounds {
+  swLat: number
+  swLng: number
+  neLat: number
+  neLng: number
 }
 
 export interface InatProjectOverview {
@@ -115,15 +127,73 @@ export const fetchRecentObservations = async (projectId: string): Promise<InatOb
     `${INAT_API_BASE}/observations?${query.toString()}`,
   )
 
-  return data.results.map((item) => ({
-    id: item.id,
-    uri: item.uri,
-    observedOn: item.observed_on,
-    speciesName: item.taxon?.name || item.species_guess || '未识别物种',
-    commonName: pickChineseName(item.taxon?.preferred_common_name),
-    userLogin: item.user.login,
-    photos: item.photos ?? [],
-  }))
+  return data.results.map((item) => {
+    const [longitude, latitude] = item.geojson?.coordinates ?? [null, null]
+
+    return {
+      id: item.id,
+      uri: item.uri,
+      observedOn: item.observed_on,
+      speciesName: item.taxon?.name || item.species_guess || '未识别物种',
+      commonName: pickChineseName(item.taxon?.preferred_common_name),
+      userLogin: item.user.login,
+      latitude,
+      longitude,
+      photos: item.photos ?? [],
+    }
+  })
+}
+
+export const fetchObservationsByBounds = async (
+  projectId: string,
+  bounds: ObservationBounds,
+): Promise<InatObservation[]> => {
+  const perPage = 200
+  const maxPages = 20
+  const all: InatObservation[] = []
+
+  for (let page = 1; page <= maxPages; page += 1) {
+    const query = new URLSearchParams({
+      project_id: projectId,
+      per_page: String(perPage),
+      page: String(page),
+      locale: 'zh-CN',
+      order_by: 'observed_on',
+      order: 'desc',
+      swlat: String(bounds.swLat),
+      swlng: String(bounds.swLng),
+      nelat: String(bounds.neLat),
+      nelng: String(bounds.neLng),
+    })
+
+    const data = await fetchInat<InatListResponse<RawObservation>>(
+      `${INAT_API_BASE}/observations?${query.toString()}`,
+    )
+
+    const mapped = data.results.map((item) => {
+      const [longitude, latitude] = item.geojson?.coordinates ?? [null, null]
+
+      return {
+        id: item.id,
+        uri: item.uri,
+        observedOn: item.observed_on,
+        speciesName: item.taxon?.name || item.species_guess || '未识别物种',
+        commonName: pickChineseName(item.taxon?.preferred_common_name),
+        userLogin: item.user.login,
+        latitude,
+        longitude,
+        photos: item.photos ?? [],
+      }
+    })
+
+    all.push(...mapped)
+
+    if (data.results.length < perPage) {
+      break
+    }
+  }
+
+  return all
 }
 
 export const fetchSpeciesCounts = async (projectId: string): Promise<InatSpeciesCount[]> => {

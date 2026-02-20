@@ -45,7 +45,8 @@ npm run preview
 
 - `vite.config.ts` 已配置 `base: '/tsinghua-dyqy/'`
 - 若仓库名变化，需要同步修改 `base`。
-- 推荐使用 GitHub Actions 将 `dist/` 发布到 Pages。
+- 已提供工作流：`.github/workflows/deploy.yml`。
+- GitHub 仓库 Settings → Pages 请设置为 `Build and deployment: GitHub Actions`。
 
 ## 核心目录
 

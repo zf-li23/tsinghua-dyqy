@@ -1,6 +1,13 @@
 import { useEffect, useMemo, useState } from 'react'
-import { DYQY_INAT_PROJECT_ID, DYQY_INAT_PROJECT_URL } from '../config'
 import {
+  DYQY_INAT_AREAS,
+  DYQY_INAT_PROJECT_ID,
+  DYQY_INAT_PROJECT_URL,
+  type InatAreaBounds,
+} from '../config'
+import { ObservationMap } from '../components/ObservationMap'
+import {
+  fetchObservationsByBounds,
   fetchProjectOverview,
   fetchRecentObservations,
   fetchSpeciesCounts,
@@ -11,11 +18,15 @@ import {
 } from '../services/inat'
 
 export function SpeciesRecordsPage() {
+  const [activeArea, setActiveArea] = useState<InatAreaBounds>(DYQY_INAT_AREAS[0])
   const [project, setProject] = useState<InatProjectOverview | null>(null)
   const [observations, setObservations] = useState<InatObservation[]>([])
+  const [mapObservations, setMapObservations] = useState<InatObservation[]>([])
   const [speciesCounts, setSpeciesCounts] = useState<InatSpeciesCount[]>([])
   const [loading, setLoading] = useState(true)
+  const [mapLoading, setMapLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [mapError, setMapError] = useState<string | null>(null)
 
   useEffect(() => {
     const load = async () => {
@@ -38,6 +49,23 @@ export function SpeciesRecordsPage() {
     }
     load()
   }, [])
+
+  useEffect(() => {
+    const loadMapData = async () => {
+      setMapLoading(true)
+      setMapError(null)
+      try {
+        const data = await fetchObservationsByBounds(DYQY_INAT_PROJECT_ID, activeArea)
+        setMapObservations(data)
+      } catch {
+        setMapError('地图观察数据加载失败，请稍后刷新重试。')
+      } finally {
+        setMapLoading(false)
+      }
+    }
+
+    loadMapData()
+  }, [activeArea])
 
   const stats = useMemo(
     () => [
@@ -72,6 +100,34 @@ export function SpeciesRecordsPage() {
             <span>{item.label}</span>
           </article>
         ))}
+      </section>
+
+      <section className="card page-article">
+        <h3>观察地图</h3>
+        <p>可切换查看石梯村与百花岭范围内的全部 iNaturalist 观察点位。</p>
+
+        <div className="area-switcher" role="tablist" aria-label="观察范围选择">
+          {DYQY_INAT_AREAS.map((area) => (
+            <button
+              key={area.key}
+              type="button"
+              className={area.key === activeArea.key ? 'active' : ''}
+              onClick={() => setActiveArea(area)}
+            >
+              {area.label}
+            </button>
+          ))}
+        </div>
+
+        {mapLoading && <p>正在加载 {activeArea.label} 的地图点位...</p>}
+        {mapError && <p className="error-text">{mapError}</p>}
+
+        {!mapLoading && !mapError && (
+          <>
+            <p>当前范围共 {mapObservations.length} 条观察记录。</p>
+            <ObservationMap bounds={activeArea} observations={mapObservations} />
+          </>
+        )}
       </section>
 
       {loading && <section className="card">正在同步记录数据...</section>}
