@@ -27,6 +27,18 @@ interface RawObservation {
   }>
 }
 
+interface RawTaxonDetail {
+  id: number
+  name: string
+  rank: string
+  preferred_common_name: string | null
+  wikipedia_summary: string | null
+  default_photo: {
+    medium_url: string | null
+    attribution: string | null
+  } | null
+}
+
 interface RawProject {
   id: number
   title: string
@@ -82,6 +94,24 @@ export interface InatSpeciesCount {
   name: string
   preferredCommonName: string | null
   count: number
+}
+
+export interface InatSpeciesDetail {
+  taxonId: number
+  rank: string
+  name: string
+  commonName: string | null
+  wikipediaSummary: string | null
+  defaultPhotoUrl: string | null
+  defaultPhotoAttribution: string | null
+}
+
+export interface InatSpeciesPhoto {
+  observationId: number
+  observationUri: string
+  observedOn: string
+  userLogin: string
+  photoUrl: string
 }
 
 const fetchInat = async <T>(url: string): Promise<T> => {
@@ -214,6 +244,66 @@ export const fetchSpeciesCounts = async (projectId: string): Promise<InatSpecies
     preferredCommonName: pickChineseName(item.taxon.preferred_common_name),
     count: item.count,
   }))
+}
+
+export const fetchSpeciesDetail = async (taxonId: number): Promise<InatSpeciesDetail | null> => {
+  const data = await fetchInat<InatListResponse<RawTaxonDetail>>(
+    `${INAT_API_BASE}/taxa/${taxonId}?locale=zh-CN`,
+  )
+
+  const taxon = data.results[0]
+  if (!taxon) {
+    return null
+  }
+
+  return {
+    taxonId: taxon.id,
+    rank: taxon.rank,
+    name: taxon.name,
+    commonName: pickChineseName(taxon.preferred_common_name),
+    wikipediaSummary: taxon.wikipedia_summary,
+    defaultPhotoUrl: taxon.default_photo?.medium_url ?? null,
+    defaultPhotoAttribution: taxon.default_photo?.attribution ?? null,
+  }
+}
+
+export const fetchSpeciesPhotos = async (
+  projectId: string,
+  taxonId: number,
+): Promise<InatSpeciesPhoto[]> => {
+  const query = new URLSearchParams({
+    project_id: projectId,
+    taxon_id: String(taxonId),
+    per_page: '12',
+    page: '1',
+    order_by: 'observed_on',
+    order: 'desc',
+    locale: 'zh-CN',
+    verifiable: 'any',
+  })
+
+  const data = await fetchInat<InatListResponse<RawObservation>>(
+    `${INAT_API_BASE}/observations?${query.toString()}`,
+  )
+
+  const photos: InatSpeciesPhoto[] = []
+
+  for (const item of data.results) {
+    const imageUrl = item.photos?.[0]?.url
+    if (!imageUrl) {
+      continue
+    }
+
+    photos.push({
+      observationId: item.id,
+      observationUri: item.uri,
+      observedOn: item.observed_on,
+      userLogin: item.user.login,
+      photoUrl: imageUrl.replace('square', 'medium'),
+    })
+  }
+
+  return photos
 }
 
 export const formatObservedDate = (dateText: string): string => {

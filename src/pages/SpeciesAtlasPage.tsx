@@ -1,4 +1,11 @@
 import { useEffect, useMemo, useState } from 'react'
+import {
+  fetchSpeciesDetail,
+  fetchSpeciesPhotos,
+  formatObservedDate,
+  type InatSpeciesDetail,
+  type InatSpeciesPhoto,
+} from '../services/inat'
 
 interface SpeciesTreeNode {
   key: string
@@ -17,6 +24,14 @@ interface SpeciesTreeData {
   totalObservations: number
   totalSpecies: number
   tree: SpeciesTreeNode[]
+}
+
+interface SpeciesLeafItem {
+  taxonId: number
+  name: string
+  commonName: string | null
+  rank: string
+  observationCount: number
 }
 
 const rankLabel: Record<string, string> = {
@@ -39,26 +54,56 @@ const formatTime = (value: string): string => {
   return date.toLocaleString('zh-CN')
 }
 
-function AtlasNode({ node, depth }: { node: SpeciesTreeNode; depth: number }) {
+function hasSelectedDescendant(node: SpeciesTreeNode, selectedTaxonId: number | null): boolean {
+  if (!selectedTaxonId) {
+    return false
+  }
+
+  if (node.taxonId === selectedTaxonId) {
+    return true
+  }
+
+  return node.children.some((child) => hasSelectedDescendant(child, selectedTaxonId))
+}
+
+function AtlasNode({
+  node,
+  depth,
+  selectedTaxonId,
+  onSelect,
+}: {
+  node: SpeciesTreeNode
+  depth: number
+  selectedTaxonId: number | null
+  onSelect: (taxonId: number) => void
+}) {
   const label = rankLabel[node.rank] || node.rank
   const commonName = node.commonName ? `（${node.commonName}）` : ''
 
   if (node.children.length === 0) {
+    const isActive = node.taxonId === selectedTaxonId
+
     return (
       <li className="atlas-item atlas-leaf">
-        <div className="atlas-line">
+        <button
+          type="button"
+          className={`atlas-line atlas-leaf-btn ${isActive ? 'active' : ''}`}
+          onClick={() => node.taxonId && onSelect(node.taxonId)}
+        >
           <span className="atlas-rank">{label}</span>
           <strong>{node.name}</strong>
           <span className="atlas-common">{commonName}</span>
           <b>{node.observationCount}</b>
-        </div>
+        </button>
       </li>
     )
   }
 
+  const shouldOpen = depth < 2 || hasSelectedDescendant(node, selectedTaxonId)
+
   return (
     <li className="atlas-item">
-      <details open={depth < 2}>
+      <details open={shouldOpen}>
         <summary>
           <span className="atlas-rank">{label}</span>
           <strong>{node.name}</strong>
@@ -70,7 +115,13 @@ function AtlasNode({ node, depth }: { node: SpeciesTreeNode; depth: number }) {
 
         <ul className="atlas-tree">
           {node.children.map((child) => (
-            <AtlasNode key={child.key} node={child} depth={depth + 1} />
+            <AtlasNode
+              key={child.key}
+              node={child}
+              depth={depth + 1}
+              selectedTaxonId={selectedTaxonId}
+              onSelect={onSelect}
+            />
           ))}
         </ul>
       </details>
@@ -82,6 +133,11 @@ export function SpeciesAtlasPage() {
   const [data, setData] = useState<SpeciesTreeData | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [selectedTaxonId, setSelectedTaxonId] = useState<number | null>(null)
+  const [detail, setDetail] = useState<InatSpeciesDetail | null>(null)
+  const [photos, setPhotos] = useState<InatSpeciesPhoto[]>([])
+  const [detailLoading, setDetailLoading] = useState(false)
+  const [detailError, setDetailError] = useState<string | null>(null)
 
   useEffect(() => {
     const load = async () => {
@@ -105,6 +161,72 @@ export function SpeciesAtlasPage() {
   }, [])
 
   const topLevelCount = useMemo(() => data?.tree.length ?? 0, [data])
+
+  const speciesLeaves = useMemo(() => {
+    if (!data) {
+      return [] as SpeciesLeafItem[]
+    }
+
+    const rows: SpeciesLeafItem[] = []
+
+    const walk = (nodes: SpeciesTreeNode[]) => {
+      for (const node of nodes) {
+        if (node.children.length === 0 && node.taxonId) {
+          rows.push({
+            taxonId: node.taxonId,
+            name: node.name,
+            commonName: node.commonName,
+            rank: node.rank,
+            observationCount: node.observationCount,
+          })
+          continue
+        }
+
+        walk(node.children)
+      }
+    }
+
+    walk(data.tree)
+    return rows
+  }, [data])
+
+  const selectedLeaf = useMemo(
+    () => speciesLeaves.find((item) => item.taxonId === selectedTaxonId) ?? null,
+    [speciesLeaves, selectedTaxonId],
+  )
+
+  useEffect(() => {
+    if (!selectedTaxonId && speciesLeaves.length > 0) {
+      setSelectedTaxonId(speciesLeaves[0].taxonId)
+    }
+  }, [selectedTaxonId, speciesLeaves])
+
+  useEffect(() => {
+    if (!selectedTaxonId || !data) {
+      return
+    }
+
+    const loadProfile = async () => {
+      setDetailLoading(true)
+      setDetailError(null)
+      try {
+        const [nextDetail, nextPhotos] = await Promise.all([
+          fetchSpeciesDetail(selectedTaxonId),
+          fetchSpeciesPhotos(data.projectId, selectedTaxonId),
+        ])
+        setDetail(nextDetail)
+        setPhotos(nextPhotos)
+      } catch {
+        setDetailError('物种详情加载失败，请稍后重试。')
+        setDetail(null)
+        setPhotos([])
+      } finally {
+        setDetailLoading(false)
+      }
+    }
+
+    loadProfile()
+  }, [data, selectedTaxonId])
 
   return (
     <>
@@ -143,11 +265,102 @@ export function SpeciesAtlasPage() {
 
           <section className="card page-article">
             <p className="atlas-meta">最近生成：{formatTime(data.generatedAt)}</p>
-            <ul className="atlas-tree atlas-root">
-              {data.tree.map((node) => (
-                <AtlasNode key={node.key} node={node} depth={0} />
-              ))}
-            </ul>
+            <div className="atlas-layout">
+              <aside className="atlas-sidebar">
+                <h3>物种树导航</h3>
+                <ul className="atlas-tree atlas-root">
+                  {data.tree.map((node) => (
+                    <AtlasNode
+                      key={node.key}
+                      node={node}
+                      depth={0}
+                      selectedTaxonId={selectedTaxonId}
+                      onSelect={setSelectedTaxonId}
+                    />
+                  ))}
+                </ul>
+              </aside>
+
+              <section className="atlas-main">
+                <h3>物种详情</h3>
+                {!selectedLeaf && <p>请先从左侧树中选择物种。</p>}
+
+                {selectedLeaf && (
+                  <>
+                    <article className="atlas-detail-card">
+                      <h4>
+                        {selectedLeaf.name}
+                        {selectedLeaf.commonName ? `（${selectedLeaf.commonName}）` : ''}
+                      </h4>
+                      <p>
+                        分类等级：{rankLabel[selectedLeaf.rank] || selectedLeaf.rank} ·
+                        项目内记录数：{selectedLeaf.observationCount}
+                      </p>
+
+                      {detailLoading && <p>正在加载详细信息...</p>}
+                      {detailError && <p className="error-text">{detailError}</p>}
+
+                      {!detailLoading && !detailError && detail && (
+                        <>
+                          {detail.defaultPhotoUrl && (
+                            <img
+                              src={detail.defaultPhotoUrl}
+                              alt={detail.name}
+                              className="atlas-detail-cover"
+                              loading="lazy"
+                            />
+                          )}
+
+                          {detail.wikipediaSummary && (
+                            <p className="atlas-summary">{detail.wikipediaSummary}</p>
+                          )}
+
+                          <p>
+                            <a
+                              href={`https://www.inaturalist.org/taxa/${selectedLeaf.taxonId}`}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="text-link"
+                            >
+                              打开 iNaturalist 物种页
+                            </a>
+                          </p>
+                        </>
+                      )}
+                    </article>
+
+                    <article className="atlas-detail-card">
+                      <h4>项目拍摄照片</h4>
+                      {detailLoading && <p>正在加载照片...</p>}
+                      {!detailLoading && photos.length === 0 && <p>该物种暂无可展示照片。</p>}
+
+                      {photos.length > 0 && (
+                        <div className="atlas-photo-grid">
+                          {photos.map((photo) => (
+                            <article key={photo.observationId} className="atlas-photo-card">
+                              <img src={photo.photoUrl} alt={selectedLeaf.name} loading="lazy" />
+                              <div>
+                                <small>
+                                  观察者：{photo.userLogin} · {formatObservedDate(photo.observedOn)}
+                                </small>
+                                <a
+                                  href={photo.observationUri}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                  className="text-link"
+                                >
+                                  查看原记录
+                                </a>
+                              </div>
+                            </article>
+                          ))}
+                        </div>
+                      )}
+                    </article>
+                  </>
+                )}
+              </section>
+            </div>
           </section>
         </>
       )}
