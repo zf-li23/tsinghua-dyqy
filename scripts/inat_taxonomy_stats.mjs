@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const DEFAULT_URL =
-  'https://www.inaturalist.org/observations?project_id=273065&subview=map&taxon_id=47158&verifiable=any&view=species'
+  'https://www.inaturalist.org/observations?project_id=bfbdd5b3-26b5-4060-96c8-52a7680325dc&verifiable=any&place_id=any'
 
 const inputUrl = process.argv[2] ?? DEFAULT_URL
 const parsed = new URL(inputUrl)
@@ -10,8 +10,8 @@ const projectId = parsed.searchParams.get('project_id')
 const taxonId = parsed.searchParams.get('taxon_id')
 const verifiable = parsed.searchParams.get('verifiable') ?? 'any'
 
-if (!projectId || !taxonId) {
-  throw new Error('URL 缺少必要参数：project_id 或 taxon_id')
+if (!projectId) {
+  throw new Error('URL 缺少必要参数：project_id')
 }
 
 const API_BASE = 'https://api.inaturalist.org/v1'
@@ -43,11 +43,14 @@ const fetchSpeciesCounts = async () => {
   for (let page = 1; page <= maxPages; page += 1) {
     const query = new URLSearchParams({
       project_id: projectId,
-      taxon_id: taxonId,
       verifiable,
       per_page: String(perPage),
       page: String(page),
     })
+
+    if (taxonId) {
+      query.set('taxon_id', taxonId)
+    }
 
     const url = `${API_BASE}/observations/species_counts?${query.toString()}`
     const data = await fetchJson(url)
@@ -102,7 +105,7 @@ const fetchTaxonHierarchy = async (id) => {
 const run = async () => {
   console.log('统计条件：')
   console.log(`- project_id: ${projectId}`)
-  console.log(`- taxon_id: ${taxonId}`)
+  console.log(`- taxon_id: ${taxonId ?? 'ALL'}`)
   console.log(`- verifiable: ${verifiable}`)
 
   await fetchSpeciesCounts()

@@ -22,8 +22,8 @@
 ## 数据来源
 
 - iNaturalist 项目页：
-  https://www.inaturalist.org/projects/%E6%BB%87%E7%BE%BD%E5%A5%87%E7%BC%982026
-- 当前使用项目 ID：`273065`
+  https://www.inaturalist.org/observations?project_id=bfbdd5b3-26b5-4060-96c8-52a7680325dc&verifiable=any&place_id=any
+- 当前使用项目 ID：`bfbdd5b3-26b5-4060-96c8-52a7680325dc`
 - API 域名：`https://api.inaturalist.org/v1`
 
 ## 本地运行
@@ -39,7 +39,7 @@ npm run dev
 npm run generate:species-tree
 ```
 
-- 默认从 `project_id=273065` 拉取全部 `species_counts` 与分类信息。
+- 默认从 `project_id=bfbdd5b3-26b5-4060-96c8-52a7680325dc` 拉取全部 `species_counts` 与分类信息。
 - 生成文件：`public/data/species-tree.json`。
 
 ## 构建

@@ -46,6 +46,106 @@ const rankLabel: Record<string, string> = {
   variety: '变种',
 }
 
+const traditionalToSimplifiedMap: Record<string, string> = {
+  雲: '云',
+  學: '学',
+  鳥: '鸟',
+  鶥: '鹛',
+  種: '种',
+  類: '类',
+  亞: '亚',
+  綱: '纲',
+  目: '目',
+  科: '科',
+  屬: '属',
+  門: '门',
+  與: '与',
+  為: '为',
+  的: '的',
+  一: '一',
+  個: '个',
+  這: '这',
+  該: '该',
+  於: '于',
+  來: '来',
+  後: '后',
+  觀: '观',
+  察: '察',
+  記: '记',
+  錄: '录',
+  體: '体',
+  臺: '台',
+  網: '网',
+  頁: '页',
+  寫: '写',
+  發: '发',
+  現: '现',
+  繁: '繁',
+  簡: '简',
+}
+
+const toSimplified = (text: string): string =>
+  [...text]
+    .map((char) => traditionalToSimplifiedMap[char] ?? char)
+    .join('')
+
+const sanitizeSummaryHtml = (raw: string | null | undefined): string => {
+  if (!raw) {
+    return ''
+  }
+
+  if (typeof window === 'undefined' || typeof DOMParser === 'undefined') {
+    return toSimplified(raw)
+  }
+
+  const parser = new DOMParser()
+  const doc = parser.parseFromString(raw, 'text/html')
+  const allowedTags = new Set(['B', 'I', 'EM', 'STRONG', 'P', 'BR', 'UL', 'OL', 'LI', 'A'])
+
+  const walk = (element: Element) => {
+    const children = [...element.children]
+    for (const child of children) {
+      if (!allowedTags.has(child.tagName)) {
+        const fragment = document.createDocumentFragment()
+        while (child.firstChild) {
+          fragment.appendChild(child.firstChild)
+        }
+        child.replaceWith(fragment)
+        continue
+      }
+
+      if (child.tagName === 'A') {
+        const href = child.getAttribute('href')
+        if (!href || !/^https?:\/\//i.test(href)) {
+          child.removeAttribute('href')
+        }
+        child.setAttribute('target', '_blank')
+        child.setAttribute('rel', 'noreferrer noopener')
+      }
+
+      const attrs = [...child.attributes]
+      for (const attr of attrs) {
+        if (child.tagName !== 'A' || !['href', 'target', 'rel'].includes(attr.name)) {
+          child.removeAttribute(attr.name)
+        }
+      }
+
+      walk(child)
+    }
+  }
+
+  walk(doc.body)
+
+  const walker = doc.createTreeWalker(doc.body, NodeFilter.SHOW_TEXT)
+  let node = walker.nextNode()
+  while (node) {
+    node.textContent = toSimplified(node.textContent ?? '')
+    node = walker.nextNode()
+  }
+
+  return doc.body.innerHTML
+}
+
 const formatTime = (value: string): string => {
   const date = new Date(value)
   if (Number.isNaN(date.getTime())) {
@@ -312,7 +412,12 @@ export function SpeciesAtlasPage() {
                           )}
 
                           {detail.wikipediaSummary && (
-                            <p className="atlas-summary">{detail.wikipediaSummary}</p>
+                            <div
+                              className="atlas-summary"
+                              dangerouslySetInnerHTML={{
+                                __html: sanitizeSummaryHtml(detail.wikipediaSummary),
+                              }}
+                            />
                           )}
 
                           <p>

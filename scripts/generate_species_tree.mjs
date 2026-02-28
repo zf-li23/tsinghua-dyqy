@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const API_BASE = 'https://api.inaturalist.org/v1'
-const projectId = process.argv[2] ?? '273065'
+const projectId = process.argv[2] ?? 'bfbdd5b3-26b5-4060-96c8-52a7680325dc'
 const outputPath = process.argv[3] ?? 'public/data/species-tree.json'
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
