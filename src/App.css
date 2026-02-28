@@ -438,6 +438,72 @@
   overflow: hidden;
 }
 
+.atlas-meta {
+  font-size: 13px;
+  color: #5d7768;
+  margin-bottom: 10px !important;
+}
+
+.atlas-tree {
+  list-style: none;
+  margin: 0;
+  padding-left: 14px;
+  display: grid;
+  gap: 6px;
+}
+
+.atlas-root {
+  padding-left: 0;
+}
+
+.atlas-item details {
+  border-left: 2px solid #e3eee6;
+  padding-left: 10px;
+}
+
+.atlas-item summary {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  cursor: pointer;
+  color: #234f3b;
+}
+
+.atlas-item summary::-webkit-details-marker {
+  color: #ee6a00;
+}
+
+.atlas-rank {
+  font-size: 12px;
+  color: #f36d00;
+  font-weight: 700;
+  min-width: 20px;
+}
+
+.atlas-common {
+  color: #5f7a6b;
+  font-size: 13px;
+}
+
+.atlas-item summary small {
+  margin-left: auto;
+  color: #5f7a6b;
+  font-size: 12px;
+}
+
+.atlas-line {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  border-left: 2px solid #edf4ef;
+  padding-left: 10px;
+}
+
+.atlas-line b {
+  margin-left: auto;
+  color: #ee6a00;
+}
+
 .inat-map {
   width: 100%;
   height: 480px;

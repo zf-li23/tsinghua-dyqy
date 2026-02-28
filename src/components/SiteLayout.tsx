@@ -3,11 +3,10 @@ import { DYQY_PROJECT_NAME } from '../config'
 
 const navItems = [
   { to: '/', label: '首页' },
-  { to: '/about', label: '支队传承' },
-  { to: '/species-records', label: '物种记录' },
-  { to: '/reports', label: '调研成果' },
-  { to: '/journey', label: '行程纪实' },
-  { to: '/contact', label: '联系我们' },
+  { to: '/species-atlas', label: '物种图鉴' },
+  { to: '/data-platform', label: '数据记录平台' },
+  { to: '/showcase', label: '成果展示' },
+  { to: '/team', label: '支队与联系' },
 ]
 
 export function SiteLayout() {

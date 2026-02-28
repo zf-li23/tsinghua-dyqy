@@ -24,11 +24,11 @@ const getPreview = (files: string[]): string | null => {
 export function ReportsPage() {
   return (
     <section className="card page-article">
-      <p className="kicker">调研成果</p>
+      <p className="kicker">成果展示</p>
       <h2>历年调研成果与资料归档</h2>
       <p>
         本栏目整合“学术报告、成果总结、摄影作品、文创产品”四大类资料，
-        按年度进行可视化归档，便于后续复用与跨届传承。
+        以年度档案方式集中展示实践产出，便于传播、检索与跨届传承。
       </p>
 
       <div className="archive-years">

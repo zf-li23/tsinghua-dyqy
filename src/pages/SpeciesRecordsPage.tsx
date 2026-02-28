@@ -80,11 +80,11 @@ export function SpeciesRecordsPage() {
   return (
     <>
       <section className="card page-article">
-        <p className="kicker">物种记录</p>
-        <h2>基于 iNaturalist 的实时观测档案</h2>
+        <p className="kicker">数据记录平台</p>
+        <h2>基于 iNaturalist 的实时观察数据平台</h2>
         <p>
-          本页面以 iNaturalist Collect Project 作为数据后端，展示近期观察与高频物种统计，
-          支持持续维护与多届队员复用。
+          本栏目聚焦“记录与追踪”：通过 iNaturalist Collect Project 同步近期观察、
+          高频物种统计与范围点位，为后续图鉴和成果展示提供结构化数据。
         </p>
         <p>
           <a href={DYQY_INAT_PROJECT_URL} target="_blank" rel="noreferrer" className="inline-link">

@@ -3,27 +3,27 @@ import { DYQY_INAT_PROJECT_URL } from '../config'
 
 const featuredPosts = [
   {
-    title: '从“鸟岛与少年”到“滇羽奇缘”',
-    excerpt: '延续生态实践的组织方法、知识积累与叙事传统，在云南建立新的野外记录样本。',
-    to: '/about',
+    title: '物种图鉴：自动汇总项目分类树',
+    excerpt: '基于 iNaturalist 项目全量记录自动生成分类树，展示科属种层级结构与观察量。',
+    to: '/species-atlas',
   },
   {
-    title: '物种记录系统上线',
-    excerpt: '以 iNaturalist 项目为数据后端，展示最近观察、高频物种与实践现场的记录逻辑。',
-    to: '/species-records',
+    title: '数据记录平台',
+    excerpt: '以 iNaturalist 项目为数据后端，展示近期观察、高频物种和地图点位。',
+    to: '/data-platform',
   },
   {
-    title: '调研与传播并重',
-    excerpt: '围绕鸟类生态、乡村产业与社区访谈，形成研究报告、纪实内容与公众科普材料。',
-    to: '/reports',
+    title: '成果展示与团队协作',
+    excerpt: '沉淀历年调研成果与资料归档，并集中展示支队传承和对外协作入口。',
+    to: '/showcase',
   },
 ]
 
 const updates = [
+  '新增“物种图鉴”栏目，可从项目记录自动更新分类树。',
   '完成盈江区域重点样点踏查与定位，形成每日观察路线日志。',
   '对接地方保护站与村社访谈，补充物种记录背景信息。',
-  '建立实践影像素材库，为后续纪录短片与图文专题做准备。',
-  '统一记录模板：物种、地点、时间、行为、栖息地与人为干扰项。',
+  '建立实践影像素材库，为后续图鉴配图与图文专题做准备。',
 ]
 
 export function HomePage() {
@@ -33,8 +33,8 @@ export function HomePage() {
         <p className="kicker">滇羽奇缘 · 官方网站</p>
         <h2>博客式多页面档案，持续更新实践记录</h2>
         <p>
-          本站采用接近 Jekyll 的栏目化阅读体验：每个栏目独立页面，支持清晰切换和长期维护。
-          核心物种数据与 iNaturalist 项目同步，兼顾叙事与科学记录。
+          本站采用接近 Jekyll 的栏目化阅读体验：围绕“物种图鉴、数据记录平台、成果展示、支队与联系”
+          四大主栏独立维护，支持跨届复用。
         </p>
         <p>
           <a href={DYQY_INAT_PROJECT_URL} target="_blank" rel="noreferrer" className="inline-link">
@@ -64,8 +64,8 @@ export function HomePage() {
               <li key={item}>{item}</li>
             ))}
           </ul>
-          <Link to="/journey" className="btn-link">
-            查看行程纪实
+          <Link to="/team" className="btn-link">
+            查看支队与联系
           </Link>
         </aside>
       </section>

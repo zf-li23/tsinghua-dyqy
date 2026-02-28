@@ -7,18 +7,17 @@
 ## 项目目标
 
 - 参考原 `tsinghua_birdisland.github.io` 的信息架构
-- 将“物种图鉴”升级为“物种记录”
+- 重构为“四大总栏”：物种图鉴、数据记录平台、成果展示、支队与联系
 - 通过 iNaturalist API 实时读取项目数据，作为前端展示后端
 - 主题色从“天空蓝 + 草原绿”切换到“羽毛橙 + 森林绿”
 
 ## 页面结构
 
 - `/` 首页
-- `/about` 支队传承
-- `/species-records` 物种记录（iNaturalist API）
-- `/reports` 调研成果
-- `/journey` 行程纪实
-- `/contact` 联系我们
+- `/species-atlas` 物种图鉴（自动生成物种树）
+- `/data-platform` 数据记录平台（iNaturalist API）
+- `/showcase` 成果展示（历年资料归档）
+- `/team` 支队与联系（支队传承 + 联系我们）
 
 ## 数据来源
 
@@ -33,6 +32,15 @@
 npm install
 npm run dev
 ```
+
+## 物种树生成
+
+```bash
+npm run generate:species-tree
+```
+
+- 默认从 `project_id=273065` 拉取全部 `species_counts` 与分类信息。
+- 生成文件：`public/data/species-tree.json`。
 
 ## 构建
 
@@ -58,12 +66,13 @@ src/
     SiteLayout.tsx    # 顶部导航 + 页面框架
   pages/
     HomePage.tsx
-    AboutPage.tsx
+    SpeciesAtlasPage.tsx
     SpeciesRecordsPage.tsx
     ReportsPage.tsx
-    JourneyPage.tsx
-    ContactPage.tsx
+    TeamContactPage.tsx
   config.ts           # 项目常量（名称、iNat 项目 ID/链接）
   services/
     inat.ts           # iNaturalist API 请求与数据映射
+scripts/
+  generate_species_tree.mjs
 ```

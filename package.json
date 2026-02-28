@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "stats:inat-taxonomy": "node scripts/inat_taxonomy_stats.mjs",
+    "generate:species-tree": "node scripts/generate_species_tree.mjs"
   },
   "dependencies": {
     "leaflet": "^1.9.4",
