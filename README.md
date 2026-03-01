@@ -42,6 +42,37 @@ npm run generate:species-tree
 - 默认从 `project_id=bfbdd5b3-26b5-4060-96c8-52a7680325dc` 拉取全部 `species_counts` 与分类信息。
 - 生成文件：`public/data/species-tree.json`。
 
+## 鸟塘数据清洗与 iNat 归入
+
+### 1) 清洗鸟塘点位表
+
+```bash
+npm run clean:pond-sites
+```
+
+- 默认输入：`2023-2026鸟塘信息.xlsx`
+- 默认输出：
+  - `public/data/ponds/pond-sites.json`（点位主数据，保留缺失坐标与坐标历史）
+  - `public/data/ponds/pond-record-space.json`（每个点位预留展示记录空间）
+
+### 2) 将 iNat 观察按 50m 归入鸟塘
+
+```bash
+npm run assign:pond-observations
+```
+
+- 默认参数：`project_id=bfbdd5b3-26b5-4060-96c8-52a7680325dc`，半径 `50m`
+- 默认输出：`public/data/ponds/inat-observations-by-pond-50m.json`
+- 归入规则：每条观察按“50m 内最近点位”归入；超出半径保留在 `unassigned`
+
+### 3) 未来上传手工记录的建议落点
+
+- 在 `public/data/ponds/pond-record-space.json` 的对应 `pondId` 下补充：
+  - `manualSpeciesCounts`
+  - `surveyEvents`
+  - `notes`
+  - `attachments`
+
 ## 构建
 
 ```bash

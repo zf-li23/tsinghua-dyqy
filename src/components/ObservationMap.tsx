@@ -3,23 +3,38 @@ import L from 'leaflet'
 import type { InatAreaBounds } from '../config'
 import type { InatObservation } from '../services/inat'
 
-interface ObservationMapProps {
-  bounds: InatAreaBounds
-  observations: InatObservation[]
+interface PondMarker {
+  pondId: string
+  label: string
+  latitude: number
+  longitude: number
+  manualCount: number
+  inatCount: number
 }
 
-export function ObservationMap({ bounds, observations }: ObservationMapProps) {
+interface ObservationMapProps {
+  bounds: InatAreaBounds
+  ponds: PondMarker[]
+  inatPoints?: InatObservation[]
+}
+
+export function ObservationMap({ bounds, ponds, inatPoints = [] }: ObservationMapProps) {
   const mapElementRef = useRef<HTMLDivElement | null>(null)
   const mapInstanceRef = useRef<L.Map | null>(null)
   const layersRef = useRef<L.LayerGroup | null>(null)
   const initializedRef = useRef(false)
 
-  const points = useMemo(
+  const pondMarkers = useMemo(
+    () => ponds.filter((p) => Number.isFinite(p.latitude) && Number.isFinite(p.longitude)),
+    [ponds],
+  )
+
+  const inatPointsWithCoords = useMemo(
     () =>
-      observations.filter(
+      inatPoints.filter(
         (item) => item.latitude !== null && item.longitude !== null,
       ),
-    [observations],
+    [inatPoints],
   )
 
   useEffect(() => {
@@ -47,11 +62,13 @@ export function ObservationMap({ bounds, observations }: ObservationMapProps) {
     if (!map || !initializedRef.current) {
       return
     }
-
-    map.fitBounds([
-      [bounds.swLat, bounds.swLng],
-      [bounds.neLat, bounds.neLng],
-    ])
+    map.fitBounds(
+      [
+        [bounds.swLat, bounds.swLng],
+        [bounds.neLat, bounds.neLng],
+      ],
+      { padding: [12, 12] },
+    )
   }, [bounds])
 
   useEffect(() => {
@@ -64,12 +81,29 @@ export function ObservationMap({ bounds, observations }: ObservationMapProps) {
 
     markerLayer.clearLayers()
 
-    points.forEach((item) => {
-      const marker = L.circleMarker([item.latitude as number, item.longitude as number], {
-        radius: 5,
-        color: '#f36d00',
-        fillColor: '#f36d00',
+    pondMarkers.forEach((item) => {
+      const totalCount = item.manualCount + item.inatCount
+      const radius = Math.max(6, Math.min(14, 6 + Math.log1p(totalCount)))
+      const marker = L.circleMarker([item.latitude, item.longitude], {
+        radius,
+        color: '#0f766e',
+        fillColor: '#0f766e',
         fillOpacity: 0.85,
+      })
+
+      marker.bindPopup(
+        `<strong>${item.label}</strong><br/>鸟塘：${item.pondId}<br/>人工记录：${item.manualCount} 条<br/>iNat 归并：${item.inatCount} 条`,
+      )
+
+      marker.addTo(markerLayer)
+    })
+
+    inatPointsWithCoords.forEach((item) => {
+      const marker = L.circleMarker([item.latitude as number, item.longitude as number], {
+        radius: 4,
+        color: '#f97316',
+        fillColor: '#f97316',
+        fillOpacity: 0.8,
       })
 
       marker.bindPopup(
@@ -78,7 +112,7 @@ export function ObservationMap({ bounds, observations }: ObservationMapProps) {
 
       marker.addTo(markerLayer)
     })
-  }, [bounds, points])
+  }, [bounds, pondMarkers, inatPointsWithCoords])
 
   useEffect(() => {
     return () => {
