@@ -1,0 +1,1176 @@
+{
+  "generatedAt": "2026-03-01T11:30:33.222Z",
+  "source": {
+    "workbookPath": "2023-2026鸟塘信息.xlsx",
+    "worksheet": "Sheet1",
+    "totalRows": 30
+  },
+  "summary": {
+    "uniquePondCount": 22,
+    "rowsWithValidCoordinate": 21,
+    "rowsWithMissingCoordinate": 9,
+    "rowsWithInvalidCoordinate": 0,
+    "pondsWithCanonicalCoordinate": 15,
+    "pondsMissingCanonicalCoordinate": 7
+  },
+  "ponds": [
+    {
+      "pondId": "BHL-01",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2026
+      ],
+      "coordinateStatus": "valid",
+      "canonicalCoordinate": {
+        "latitude": 25.30287687,
+        "longitude": 98.79596293,
+        "selectedFromYear": 2026,
+        "selectedFromRawText": "25.30287687°N, 98.79596293°E"
+      },
+      "coordinateCandidates": [
+        {
+          "latitude": 25.30287687,
+          "longitude": 98.79596293,
+          "years": [
+            2026
+          ],
+          "rawSamples": [
+            "25.30287687°N, 98.79596293°E"
+          ]
+        }
+      ],
+      "coordinateSpreadMeters": 0,
+      "coordinateHistory": [
+        {
+          "sourceRow": 9,
+          "pondId": "BHL-01",
+          "village": "百花岭",
+          "year": 2026,
+          "rawCoordinate": "25.30287687°N, 98.79596293°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 25.30287687,
+            "longitude": 98.79596293,
+            "normalizedText": "25.30287687,98.79596293",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "BHL-02",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2026
+      ],
+      "coordinateStatus": "valid",
+      "canonicalCoordinate": {
+        "latitude": 25.30575348,
+        "longitude": 98.7991522,
+        "selectedFromYear": 2026,
+        "selectedFromRawText": "25.30575348°N, 98.79915220°E"
+      },
+      "coordinateCandidates": [
+        {
+          "latitude": 25.30575348,
+          "longitude": 98.7991522,
+          "years": [
+            2026
+          ],
+          "rawSamples": [
+            "25.30575348°N, 98.79915220°E"
+          ]
+        }
+      ],
+      "coordinateSpreadMeters": 0,
+      "coordinateHistory": [
+        {
+          "sourceRow": 10,
+          "pondId": "BHL-02",
+          "village": "百花岭",
+          "year": 2026,
+          "rawCoordinate": "25.30575348°N, 98.79915220°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 25.30575348,
+            "longitude": 98.7991522,
+            "normalizedText": "25.30575348,98.79915220",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "BHL-04",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2026
+      ],
+      "coordinateStatus": "valid",
+      "canonicalCoordinate": {
+        "latitude": 25.306947,
+        "longitude": 98.7968,
+        "selectedFromYear": 2026,
+        "selectedFromRawText": "25.30694700°N, 98.79680000°E"
+      },
+      "coordinateCandidates": [
+        {
+          "latitude": 25.306947,
+          "longitude": 98.7968,
+          "years": [
+            2026
+          ],
+          "rawSamples": [
+            "25.30694700°N, 98.79680000°E"
+          ]
+        }
+      ],
+      "coordinateSpreadMeters": 0,
+      "coordinateHistory": [
+        {
+          "sourceRow": 11,
+          "pondId": "BHL-04",
+          "village": "百花岭",
+          "year": 2026,
+          "rawCoordinate": "25.30694700°N, 98.79680000°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 25.306947,
+            "longitude": 98.7968,
+            "normalizedText": "25.30694700,98.79680000",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "BHL-08",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2023,
+        2025
+      ],
+      "coordinateStatus": "valid",
+      "canonicalCoordinate": {
+        "latitude": 25.30267466,
+        "longitude": 98.80033279,
+        "selectedFromYear": 2025,
+        "selectedFromRawText": "25.30267466°N, 98.80033279°E"
+      },
+      "coordinateCandidates": [
+        {
+          "latitude": 25.30267466,
+          "longitude": 98.80033279,
+          "years": [
+            2023,
+            2025
+          ],
+          "rawSamples": [
+            "25.30267466°N, 98.80033279°E"
+          ]
+        }
+      ],
+      "coordinateSpreadMeters": 0,
+      "coordinateHistory": [
+        {
+          "sourceRow": 17,
+          "pondId": "BHL-08",
+          "village": "百花岭",
+          "year": 2025,
+          "rawCoordinate": "25.30267466°N, 98.80033279°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 25.30267466,
+            "longitude": 98.80033279,
+            "normalizedText": "25.30267466,98.80033279",
+            "error": null
+          }
+        },
+        {
+          "sourceRow": 28,
+          "pondId": "BHL-08",
+          "village": "百花岭",
+          "year": 2023,
+          "rawCoordinate": "25.30267466°N, 98.80033279°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 25.30267466,
+            "longitude": 98.80033279,
+            "normalizedText": "25.30267466,98.80033279",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "BHL-11",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2023,
+        2026
+      ],
+      "coordinateStatus": "valid",
+      "canonicalCoordinate": {
+        "latitude": 25.30203168,
+        "longitude": 98.79371755,
+        "selectedFromYear": 2026,
+        "selectedFromRawText": "25.30203168°N, 98.79371755°E"
+      },
+      "coordinateCandidates": [
+        {
+          "latitude": 25.30203168,
+          "longitude": 98.79371755,
+          "years": [
+            2023,
+            2026
+          ],
+          "rawSamples": [
+            "25.30203168°N, 98.79371755°E"
+          ]
+        }
+      ],
+      "coordinateSpreadMeters": 0,
+      "coordinateHistory": [
+        {
+          "sourceRow": 12,
+          "pondId": "BHL-11",
+          "village": "百花岭",
+          "year": 2026,
+          "rawCoordinate": "25.30203168°N, 98.79371755°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 25.30203168,
+            "longitude": 98.79371755,
+            "normalizedText": "25.30203168,98.79371755",
+            "error": null
+          }
+        },
+        {
+          "sourceRow": 29,
+          "pondId": "BHL-11",
+          "village": "百花岭",
+          "year": 2023,
+          "rawCoordinate": "25.30203168°N, 98.79371755°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 25.30203168,
+            "longitude": 98.79371755,
+            "normalizedText": "25.30203168,98.79371755",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "BHL-27",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2023,
+        2025,
+        2026
+      ],
+      "coordinateStatus": "missing",
+      "canonicalCoordinate": null,
+      "coordinateCandidates": [],
+      "coordinateSpreadMeters": null,
+      "coordinateHistory": [
+        {
+          "sourceRow": 13,
+          "pondId": "BHL-27",
+          "village": "百花岭",
+          "year": 2026,
+          "rawCoordinate": "",
+          "coordinate": {
+            "status": "missing",
+            "latitude": null,
+            "longitude": null,
+            "normalizedText": "",
+            "error": null
+          }
+        },
+        {
+          "sourceRow": 18,
+          "pondId": "BHL-27",
+          "village": "百花岭",
+          "year": 2025,
+          "rawCoordinate": "",
+          "coordinate": {
+            "status": "missing",
+            "latitude": null,
+            "longitude": null,
+            "normalizedText": "",
+            "error": null
+          }
+        },
+        {
+          "sourceRow": 30,
+          "pondId": "BHL-27",
+          "village": "百花岭",
+          "year": 2023,
+          "rawCoordinate": "",
+          "coordinate": {
+            "status": "missing",
+            "latitude": null,
+            "longitude": null,
+            "normalizedText": "",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "BHL-32",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2023
+      ],
+      "coordinateStatus": "missing",
+      "canonicalCoordinate": null,
+      "coordinateCandidates": [],
+      "coordinateSpreadMeters": null,
+      "coordinateHistory": [
+        {
+          "sourceRow": 31,
+          "pondId": "BHL-32",
+          "village": "百花岭",
+          "year": 2023,
+          "rawCoordinate": "",
+          "coordinate": {
+            "status": "missing",
+            "latitude": null,
+            "longitude": null,
+            "normalizedText": "",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "BHL-35",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2025
+      ],
+      "coordinateStatus": "valid",
+      "canonicalCoordinate": {
+        "latitude": 25.30585381,
+        "longitude": 98.79456939,
+        "selectedFromYear": 2025,
+        "selectedFromRawText": "25.30585381°N, 98.79456939°E"
+      },
+      "coordinateCandidates": [
+        {
+          "latitude": 25.30585381,
+          "longitude": 98.79456939,
+          "years": [
+            2025
+          ],
+          "rawSamples": [
+            "25.30585381°N, 98.79456939°E"
+          ]
+        }
+      ],
+      "coordinateSpreadMeters": 0,
+      "coordinateHistory": [
+        {
+          "sourceRow": 19,
+          "pondId": "BHL-35",
+          "village": "百花岭",
+          "year": 2025,
+          "rawCoordinate": "25.30585381°N, 98.79456939°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 25.30585381,
+            "longitude": 98.79456939,
+            "normalizedText": "25.30585381,98.79456939",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "BHL-43",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2025
+      ],
+      "coordinateStatus": "missing",
+      "canonicalCoordinate": null,
+      "coordinateCandidates": [],
+      "coordinateSpreadMeters": null,
+      "coordinateHistory": [
+        {
+          "sourceRow": 20,
+          "pondId": "BHL-43",
+          "village": "百花岭",
+          "year": 2025,
+          "rawCoordinate": "",
+          "coordinate": {
+            "status": "missing",
+            "latitude": null,
+            "longitude": null,
+            "normalizedText": "",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "BHL-86",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2025
+      ],
+      "coordinateStatus": "valid",
+      "canonicalCoordinate": {
+        "latitude": 25.30805056,
+        "longitude": 98.79495869,
+        "selectedFromYear": 2025,
+        "selectedFromRawText": "25.30805056°N, 98.79495869°E"
+      },
+      "coordinateCandidates": [
+        {
+          "latitude": 25.30805056,
+          "longitude": 98.79495869,
+          "years": [
+            2025
+          ],
+          "rawSamples": [
+            "25.30805056°N, 98.79495869°E"
+          ]
+        }
+      ],
+      "coordinateSpreadMeters": 0,
+      "coordinateHistory": [
+        {
+          "sourceRow": 21,
+          "pondId": "BHL-86",
+          "village": "百花岭",
+          "year": 2025,
+          "rawCoordinate": "25.30805056°N, 98.79495869°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 25.30805056,
+            "longitude": 98.79495869,
+            "normalizedText": "25.30805056,98.79495869",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "ST-02",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2023
+      ],
+      "coordinateStatus": "missing",
+      "canonicalCoordinate": null,
+      "coordinateCandidates": [],
+      "coordinateSpreadMeters": null,
+      "coordinateHistory": [
+        {
+          "sourceRow": 22,
+          "pondId": "ST-02",
+          "village": "石梯",
+          "year": 2023,
+          "rawCoordinate": "",
+          "coordinate": {
+            "status": "missing",
+            "latitude": null,
+            "longitude": null,
+            "normalizedText": "",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "ST-05",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2023,
+        2025,
+        2026
+      ],
+      "coordinateStatus": "valid",
+      "canonicalCoordinate": {
+        "latitude": 24.47675,
+        "longitude": 97.574762,
+        "selectedFromYear": 2026,
+        "selectedFromRawText": "24.47675000°N, 97.57476200°E"
+      },
+      "coordinateCandidates": [
+        {
+          "latitude": 24.47675,
+          "longitude": 97.574762,
+          "years": [
+            2023,
+            2025,
+            2026
+          ],
+          "rawSamples": [
+            "24.47675000°N, 97.57476200°E"
+          ]
+        }
+      ],
+      "coordinateSpreadMeters": 0,
+      "coordinateHistory": [
+        {
+          "sourceRow": 2,
+          "pondId": "ST-05",
+          "village": "石梯",
+          "year": 2026,
+          "rawCoordinate": "24.47675000°N, 97.57476200°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 24.47675,
+            "longitude": 97.574762,
+            "normalizedText": "24.47675000,97.57476200",
+            "error": null
+          }
+        },
+        {
+          "sourceRow": 14,
+          "pondId": "ST-05",
+          "village": "石梯",
+          "year": 2025,
+          "rawCoordinate": "24.47675000°N, 97.57476200°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 24.47675,
+            "longitude": 97.574762,
+            "normalizedText": "24.47675000,97.57476200",
+            "error": null
+          }
+        },
+        {
+          "sourceRow": 23,
+          "pondId": "ST-05",
+          "village": "石梯",
+          "year": 2023,
+          "rawCoordinate": "24.47675000°N, 97.57476200°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 24.47675,
+            "longitude": 97.574762,
+            "normalizedText": "24.47675000,97.57476200",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "ST-06",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2023
+      ],
+      "coordinateStatus": "missing",
+      "canonicalCoordinate": null,
+      "coordinateCandidates": [],
+      "coordinateSpreadMeters": null,
+      "coordinateHistory": [
+        {
+          "sourceRow": 24,
+          "pondId": "ST-06",
+          "village": "石梯",
+          "year": 2023,
+          "rawCoordinate": "",
+          "coordinate": {
+            "status": "missing",
+            "latitude": null,
+            "longitude": null,
+            "normalizedText": "",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "ST-07",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2026
+      ],
+      "coordinateStatus": "valid",
+      "canonicalCoordinate": {
+        "latitude": 24.477872,
+        "longitude": 97.584092,
+        "selectedFromYear": 2026,
+        "selectedFromRawText": "24.47787200°N, 97.58409200°E"
+      },
+      "coordinateCandidates": [
+        {
+          "latitude": 24.477872,
+          "longitude": 97.584092,
+          "years": [
+            2026
+          ],
+          "rawSamples": [
+            "24.47787200°N, 97.58409200°E"
+          ]
+        }
+      ],
+      "coordinateSpreadMeters": 0,
+      "coordinateHistory": [
+        {
+          "sourceRow": 3,
+          "pondId": "ST-07",
+          "village": "石梯",
+          "year": 2026,
+          "rawCoordinate": "24.47787200°N, 97.58409200°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 24.477872,
+            "longitude": 97.584092,
+            "normalizedText": "24.47787200,97.58409200",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "ST-10",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2023
+      ],
+      "coordinateStatus": "missing",
+      "canonicalCoordinate": null,
+      "coordinateCandidates": [],
+      "coordinateSpreadMeters": null,
+      "coordinateHistory": [
+        {
+          "sourceRow": 25,
+          "pondId": "ST-10",
+          "village": "石梯",
+          "year": 2023,
+          "rawCoordinate": "",
+          "coordinate": {
+            "status": "missing",
+            "latitude": null,
+            "longitude": null,
+            "normalizedText": "",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "ST-13",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2023
+      ],
+      "coordinateStatus": "missing",
+      "canonicalCoordinate": null,
+      "coordinateCandidates": [],
+      "coordinateSpreadMeters": null,
+      "coordinateHistory": [
+        {
+          "sourceRow": 26,
+          "pondId": "ST-13",
+          "village": "石梯",
+          "year": 2023,
+          "rawCoordinate": "",
+          "coordinate": {
+            "status": "missing",
+            "latitude": null,
+            "longitude": null,
+            "normalizedText": "",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "ST-21",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2026
+      ],
+      "coordinateStatus": "valid",
+      "canonicalCoordinate": {
+        "latitude": 24.475492,
+        "longitude": 97.59513,
+        "selectedFromYear": 2026,
+        "selectedFromRawText": "24.47549200°N, 97.59513000°E"
+      },
+      "coordinateCandidates": [
+        {
+          "latitude": 24.475492,
+          "longitude": 97.59513,
+          "years": [
+            2026
+          ],
+          "rawSamples": [
+            "24.47549200°N, 97.59513000°E"
+          ]
+        }
+      ],
+      "coordinateSpreadMeters": 0,
+      "coordinateHistory": [
+        {
+          "sourceRow": 5,
+          "pondId": "ST-21",
+          "village": "石梯",
+          "year": 2026,
+          "rawCoordinate": "24.47549200°N, 97.59513000°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 24.475492,
+            "longitude": 97.59513,
+            "normalizedText": "24.47549200,97.59513000",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "ST-23",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2025,
+        2026
+      ],
+      "coordinateStatus": "valid",
+      "canonicalCoordinate": {
+        "latitude": 24.45624431,
+        "longitude": 97.55203087,
+        "selectedFromYear": 2026,
+        "selectedFromRawText": "24.45624431°N, 97.55203087°E"
+      },
+      "coordinateCandidates": [
+        {
+          "latitude": 24.45624431,
+          "longitude": 97.55203087,
+          "years": [
+            2025,
+            2026
+          ],
+          "rawSamples": [
+            "24.45624431°N, 97.55203087°E"
+          ]
+        }
+      ],
+      "coordinateSpreadMeters": 0,
+      "coordinateHistory": [
+        {
+          "sourceRow": 6,
+          "pondId": "ST-23",
+          "village": "石梯",
+          "year": 2026,
+          "rawCoordinate": "24.45624431°N, 97.55203087°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 24.45624431,
+            "longitude": 97.55203087,
+            "normalizedText": "24.45624431,97.55203087",
+            "error": null
+          }
+        },
+        {
+          "sourceRow": 15,
+          "pondId": "ST-23",
+          "village": "石梯",
+          "year": 2025,
+          "rawCoordinate": "24.45624431°N, 97.55203087°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 24.45624431,
+            "longitude": 97.55203087,
+            "normalizedText": "24.45624431,97.55203087",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "ST-26",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2026
+      ],
+      "coordinateStatus": "valid",
+      "canonicalCoordinate": {
+        "latitude": 24.47607723,
+        "longitude": 97.58932737,
+        "selectedFromYear": 2026,
+        "selectedFromRawText": "24.47607723°N, 97.58932737°E"
+      },
+      "coordinateCandidates": [
+        {
+          "latitude": 24.47607723,
+          "longitude": 97.58932737,
+          "years": [
+            2026
+          ],
+          "rawSamples": [
+            "24.47607723°N, 97.58932737°E"
+          ]
+        }
+      ],
+      "coordinateSpreadMeters": 0,
+      "coordinateHistory": [
+        {
+          "sourceRow": 7,
+          "pondId": "ST-26",
+          "village": "石梯",
+          "year": 2026,
+          "rawCoordinate": "24.47607723°N, 97.58932737°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 24.47607723,
+            "longitude": 97.58932737,
+            "normalizedText": "24.47607723,97.58932737",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "ST-32",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2023,
+        2025
+      ],
+      "coordinateStatus": "valid",
+      "canonicalCoordinate": {
+        "latitude": 24.47786727,
+        "longitude": 97.58736426,
+        "selectedFromYear": 2025,
+        "selectedFromRawText": "24.47786727°N, 97.58736426°E"
+      },
+      "coordinateCandidates": [
+        {
+          "latitude": 24.47786727,
+          "longitude": 97.58736426,
+          "years": [
+            2023,
+            2025
+          ],
+          "rawSamples": [
+            "24.47786727°N, 97.58736426°E"
+          ]
+        }
+      ],
+      "coordinateSpreadMeters": 0,
+      "coordinateHistory": [
+        {
+          "sourceRow": 16,
+          "pondId": "ST-32",
+          "village": "石梯",
+          "year": 2025,
+          "rawCoordinate": "24.47786727°N, 97.58736426°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 24.47786727,
+            "longitude": 97.58736426,
+            "normalizedText": "24.47786727,97.58736426",
+            "error": null
+          }
+        },
+        {
+          "sourceRow": 27,
+          "pondId": "ST-32",
+          "village": "石梯",
+          "year": 2023,
+          "rawCoordinate": "24.47786727°N, 97.58736426°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 24.47786727,
+            "longitude": 97.58736426,
+            "normalizedText": "24.47786727,97.58736426",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "ST-35",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2026
+      ],
+      "coordinateStatus": "valid",
+      "canonicalCoordinate": {
+        "latitude": 24.453278,
+        "longitude": 97.53672,
+        "selectedFromYear": 2026,
+        "selectedFromRawText": "24.45327800°N, 97.53672000°E"
+      },
+      "coordinateCandidates": [
+        {
+          "latitude": 24.453278,
+          "longitude": 97.53672,
+          "years": [
+            2026
+          ],
+          "rawSamples": [
+            "24.45327800°N, 97.53672000°E"
+          ]
+        }
+      ],
+      "coordinateSpreadMeters": 0,
+      "coordinateHistory": [
+        {
+          "sourceRow": 8,
+          "pondId": "ST-35",
+          "village": "石梯",
+          "year": 2026,
+          "rawCoordinate": "24.45327800°N, 97.53672000°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 24.453278,
+            "longitude": 97.53672,
+            "normalizedText": "24.45327800,97.53672000",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    },
+    {
+      "pondId": "ST-38",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2026
+      ],
+      "coordinateStatus": "valid",
+      "canonicalCoordinate": {
+        "latitude": 24.47265947,
+        "longitude": 97.57126128,
+        "selectedFromYear": 2026,
+        "selectedFromRawText": "24.47265947°N, 97.57126128°E"
+      },
+      "coordinateCandidates": [
+        {
+          "latitude": 24.47265947,
+          "longitude": 97.57126128,
+          "years": [
+            2026
+          ],
+          "rawSamples": [
+            "24.47265947°N, 97.57126128°E"
+          ]
+        }
+      ],
+      "coordinateSpreadMeters": 0,
+      "coordinateHistory": [
+        {
+          "sourceRow": 4,
+          "pondId": "ST-38",
+          "village": "石梯",
+          "year": 2026,
+          "rawCoordinate": "24.47265947°N, 97.57126128°E",
+          "coordinate": {
+            "status": "valid",
+            "latitude": 24.47265947,
+            "longitude": 97.57126128,
+            "normalizedText": "24.47265947,97.57126128",
+            "error": null
+          }
+        }
+      ],
+      "displayRecordSpace": {
+        "inatAssignments": [],
+        "manualSpeciesCounts": [],
+        "surveyEvents": [],
+        "notes": [],
+        "attachments": []
+      }
+    }
+  ]
+}
