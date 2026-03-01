@@ -627,3 +627,5 @@
     max-height: 50vh;
   }
 }
+.accordion-btn { background: none; border: none; cursor: pointer; width: 100%; text-align: left; padding: 10px; font-weight: bold; font-size: 1.1em; color: #014335; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; } .accordion-btn:hover { background: #f9fdfa; } .accordion-content { padding: 10px; }
+.accordion-icon { transition: transform 0.3s; } .accordion-icon.open { transform: rotate(180deg); }
