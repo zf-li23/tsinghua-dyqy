@@ -1,0 +1,3201 @@
+{
+  "generatedAt": "2026-03-01T11:30:33.222Z",
+  "sourcePondSitesFile": "public/data/ponds/pond-sites.json",
+  "schemaVersion": 1,
+  "records": [
+    {
+      "pondId": "BHL-01",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2026
+      ],
+      "hasCanonicalCoordinate": true,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "BHL-02",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2026
+      ],
+      "hasCanonicalCoordinate": true,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "BHL-04",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2026
+      ],
+      "hasCanonicalCoordinate": true,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "BHL-08",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2023,
+        2025
+      ],
+      "hasCanonicalCoordinate": true,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [
+        {
+          "year": 2023,
+          "speciesName": "黄冠啄木鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白腹凤鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白喉扇尾鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "方尾鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黄颊山雀",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黄绿鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "柳莺",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "长嘴钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "斑胸钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕颈钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕头钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑头穗鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰眶雀鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕头幽鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "斑胸噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "蓝翅噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "纯色噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "金翅噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "赤尾噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "锈额斑翅鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "红翅薮鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "银耳相思鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "红嘴相思鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "长尾奇鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕头雀鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "栗臀䴓",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "光背地鸫",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "长尾地鸫",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "紫啸鸫",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "小仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑胸太阳鸟",
+          "count": "-"
+        }
+      ],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "BHL-11",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2023,
+        2026
+      ],
+      "hasCanonicalCoordinate": true,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [
+        {
+          "year": 2023,
+          "speciesName": "环颈山鹧鸪",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "红喉山鹧鸪",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白鹇",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "大黄冠啄木鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白腹凤鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白喉扇尾鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "柳莺",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑头穗鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "红头穗鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "金翅噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "赤尾噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "斑喉希鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "红翅薮鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑头奇鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑胸鸫",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰翅鸫",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "蓝眉林鸲",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "紫啸鸫",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "绿喉太阳鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑胸太阳鸟",
+          "count": "-"
+        }
+      ],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "BHL-27",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2023,
+        2025,
+        2026
+      ],
+      "hasCanonicalCoordinate": false,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [
+        {
+          "year": 2023,
+          "speciesName": "金喉拟啄木鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "大黄冠啄木鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白腹凤鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黄颊山雀",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "栗头地莺",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "柳莺",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "红头穗鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰眶雀鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "褐胁雀鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "蓝翅噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "赤尾噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "蓝翅希鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "锈额斑翅鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑头奇鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "丽色奇鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黄颈凤鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "栗臀䴓",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰翅鸫",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "大仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "绿喉太阳鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑胸太阳鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黄腰太阳鸟",
+          "count": "-"
+        },
+        {
+          "year": 2025,
+          "speciesName": "金喉拟啄木鸟",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "长尾山椒鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄腹扇尾鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄颊山雀",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "橙斑翅柳莺",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄颈凤鹛",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红胁绣眼鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红头穗鹛",
+          "count": "3"
+        },
+        {
+          "year": 2025,
+          "speciesName": "褐胁雀鹛",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "褐脸雀鹛",
+          "count": "10"
+        },
+        {
+          "year": 2025,
+          "speciesName": "云南雀鹛",
+          "count": "10"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白眶雀鹛",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红顶噪鹛",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红翅薮鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "栗额斑翅鹛",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "蓝翅希鹛",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "丽色奇鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑头奇鹛",
+          "count": "6"
+        },
+        {
+          "year": 2025,
+          "speciesName": "栗臀䴓",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "大仙鹟",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白尾蓝地鸲",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "蓝眉林鸲",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "橙胸姬鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑胸太阳鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄腰太阳鸟",
+          "count": "1"
+        }
+      ],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "BHL-32",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2023
+      ],
+      "hasCanonicalCoordinate": false,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [
+        {
+          "year": 2023,
+          "speciesName": "金喉拟啄木鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "蓝喉拟啄木鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "凤头雀嘴鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黄绿鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "绿翅短脚鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "斑胸钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑头穗鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "红头穗鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "云南雀鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "褐胁雀鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白腹幽鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "赤尾噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "蓝翅希鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "火尾希鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "红翅薮鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "银耳相思鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑头奇鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "丽色奇鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "长尾奇鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "红头鸦雀",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黄颈凤鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "栗臀䴓",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑胸鸫",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "红胁蓝尾鸲",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "金色林鸲",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白尾蓝地鸲",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "紫啸鸫",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕腹仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "大仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黄腹橙冠叶鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑胸太阳鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "血雀",
+          "count": "-"
+        }
+      ],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "BHL-35",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2025
+      ],
+      "hasCanonicalCoordinate": true,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [
+        {
+          "year": 2025,
+          "speciesName": "红喉山鹧鸪",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕胸竹鸡",
+          "count": "7"
+        },
+        {
+          "year": 2025,
+          "speciesName": "金喉拟啄木鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "凤头雀嘴鹎",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "橙斑翅柳莺",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "栗头树莺",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "斑胸钩嘴鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕颈钩嘴鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "细嘴钩嘴鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑头穗鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红头穗鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "褐胁雀鹛",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "云南雀鹛",
+          "count": "8"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白眶雀鹛",
+          "count": "6"
+        },
+        {
+          "year": 2025,
+          "speciesName": "纯色噪鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红尾噪鹛",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红顶噪鹛",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红翅薮鹛",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "栗额斑翅鹛",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "银耳相思鸟",
+          "count": "6"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑头奇鹛",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "栗臀䴓",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑胸鸫",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰翅鸫",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "山蓝仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕腹仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "大仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白尾蓝地鸲",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红胁蓝尾鸲",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "蓝眉林鸲",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "金色林鸲",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "橙胸姬鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑胸太阳鸟",
+          "count": "1"
+        }
+      ],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "BHL-43",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2025
+      ],
+      "hasCanonicalCoordinate": false,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [
+        {
+          "year": 2025,
+          "speciesName": "红喉山鹧鸪",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "大拟啄木鸟",
+          "count": "3"
+        },
+        {
+          "year": 2025,
+          "speciesName": "蓝喉拟啄木鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰卷尾",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "云南柳莺",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄颈凤鹛",
+          "count": "10"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕颈钩嘴鹛",
+          "count": "5"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑头穗鹛",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红头穗鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "褐胁雀鹛",
+          "count": "10"
+        },
+        {
+          "year": 2025,
+          "speciesName": "云南雀鹛",
+          "count": "10"
+        },
+        {
+          "year": 2025,
+          "speciesName": "火尾希鹛",
+          "count": "10"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红翅薮鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "蓝翅希鹛",
+          "count": "20"
+        },
+        {
+          "year": 2025,
+          "speciesName": "银耳相思鸟",
+          "count": "20"
+        },
+        {
+          "year": 2025,
+          "speciesName": "长尾奇鹛",
+          "count": "10"
+        },
+        {
+          "year": 2025,
+          "speciesName": "丽色奇鹛",
+          "count": "3"
+        },
+        {
+          "year": 2025,
+          "speciesName": "栗臀䴓",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑胸鸫",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白尾蓝地鸲",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "蓝眉林鸲",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "纹背捕蛛鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑胸太阳鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "蓝喉太阳鸟",
+          "count": "2"
+        }
+      ],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "BHL-86",
+      "villages": [
+        "百花岭"
+      ],
+      "years": [
+        2025
+      ],
+      "hasCanonicalCoordinate": true,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [
+        {
+          "year": 2025,
+          "speciesName": "大黄冠啄木鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "凤头雀嘴鹎",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄颈凤鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑头穗鹛",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红头穗鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "褐胁雀鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白眶雀鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "蓝翅噪鹛",
+          "count": "3"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红翅薮鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "栗额斑翅鹛",
+          "count": "3"
+        },
+        {
+          "year": 2025,
+          "speciesName": "银耳相思鸟",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "长尾奇鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑胸鸫",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰翅鸫",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕腹仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "大仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "蓝眉林鸲",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "纹背捕蛛鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑胸太阳鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "血雀",
+          "count": "5"
+        }
+      ],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "BHQ-05",
+      "villages": [],
+      "years": [
+        2025
+      ],
+      "hasCanonicalCoordinate": false,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [
+        {
+          "year": 2025,
+          "speciesName": "黑鹇",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰孔雀雉",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "绿翅金鸠",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白喉扇尾鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "大盘尾",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "蓝绿鹊",
+          "count": "8"
+        },
+        {
+          "year": 2025,
+          "speciesName": "方尾鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑冠黄鹎",
+          "count": "3"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄腹冠鹎",
+          "count": "9"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰眼短脚鹎",
+          "count": "8"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰短脚鹎",
+          "count": "8"
+        },
+        {
+          "year": 2025,
+          "speciesName": "橙斑翅柳莺",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰腹地莺",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑头穗鹛",
+          "count": "8"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕胸雅鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕头幽鹛",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "褐脸雀鹛",
+          "count": "16"
+        },
+        {
+          "year": 2025,
+          "speciesName": "小黑领噪鹛",
+          "count": "7"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白冠噪鹛",
+          "count": "14"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑喉噪鹛",
+          "count": "16"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑领噪鹛",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "银耳相思鸟",
+          "count": "25"
+        },
+        {
+          "year": 2025,
+          "speciesName": "长嘴地鸫",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "山蓝仙鹟",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白尾蓝仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕腹仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "小仙鹟",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白尾蓝地鸲",
+          "count": "3"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白额燕尾",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "小斑姬鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "纹背捕蛛鸟",
+          "count": "3"
+        }
+      ],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "ST-02",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2023
+      ],
+      "hasCanonicalCoordinate": false,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [
+        {
+          "year": 2023,
+          "speciesName": "环颈山鹧鸪",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰孔雀雉",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "珠颈斑鸠",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "大黄冠啄木鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黄冠啄木鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰头绿啄木鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰卷尾",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "古铜色卷尾",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "大盘尾",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "蓝绿鹊",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰树鹊",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑喉红臀鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白喉红臀鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黄绿鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕颈钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕头钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "红嘴钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白冠噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "小黑领噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑领噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑喉噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "蓝翅噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "赤尾噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "红翅薮鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "栗背奇鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "长尾奇鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "绒额",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑胸鸫",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "铜蓝鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰颊仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕腹大仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "橙腹叶鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "纹背捕蛛鸟",
+          "count": "-"
+        }
+      ],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "ST-05",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2023,
+        2025,
+        2026
+      ],
+      "hasCanonicalCoordinate": true,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [
+        {
+          "year": 2023,
+          "speciesName": "绿翅金鸠",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰头绿啄木鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "蓝绿鹊",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰树鹊",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "凤头雀嘴鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "红耳鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑喉红臀鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黄绿鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黄腹冠鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰眼短脚鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "金头缝叶莺",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "栗头地莺",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "柳莺",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "长嘴钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕颈钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕头钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "纹胸巨鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "褐脸雀鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕头幽鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白冠噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑喉噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "银耳相思鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰腹绣眼鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "小斑姬鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "山蓝仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕腹仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕腹蓝仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "紫颊直嘴太阳鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "纹背捕蛛鸟",
+          "count": "-"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红喉山鹧鸪",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰孔雀雉",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "绿翅金鸠",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "大黄冠啄木鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄冠啄木鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰头绿啄木鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰背伯劳",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "蓝绿鹊",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰树鹊",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄腹扇尾鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "长尾缝叶莺",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑喉缝叶莺",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红耳鹎",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑喉红臀鹎",
+          "count": "6"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄绿鹎",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄腹冠鹎",
+          "count": "6"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑短脚鹎",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕颈钩嘴鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕头钩嘴鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红嘴钩嘴鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑头穗鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄喉穗鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "纹胸鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕头幽鹛",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "小黑领噪鹛",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑喉噪鹛",
+          "count": "6"
+        },
+        {
+          "year": 2025,
+          "speciesName": "蓝翅希鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "银耳相思鸟",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "长尾奇鹛",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "绒额䴓",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "纯蓝仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "山蓝仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕腹仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "小斑姬鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "纹背捕蛛鸟",
+          "count": "1"
+        }
+      ],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "ST-06",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2023
+      ],
+      "hasCanonicalCoordinate": false,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [
+        {
+          "year": 2023,
+          "speciesName": "灰孔雀雉",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "山斑鸠",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "珠颈斑鸠",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "斑尾鹃鸠",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "绿翅金鸠",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰卷尾",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰树鹊",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "凤头雀嘴鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑喉红臀鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑短脚鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "金头缝叶莺",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "柳莺",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕颈钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕头钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "红嘴钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰头钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑头穗鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白眶雀鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "短尾鹪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白头鵙鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕头幽鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑喉噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "蓝翅希鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "银耳相思鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "长尾奇鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕头雀鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "红头鸦雀",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰腹绣眼鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "绒额",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "紫啸鸫",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "纯蓝仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "山蓝仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕腹仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕腹蓝仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "大仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "小仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑胸太阳鸟",
+          "count": "-"
+        }
+      ],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "ST-07",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2026
+      ],
+      "hasCanonicalCoordinate": true,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "ST-10",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2023
+      ],
+      "hasCanonicalCoordinate": false,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [
+        {
+          "year": 2023,
+          "speciesName": "灰孔雀雉",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰头绿啄木鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰树鹊",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑喉红臀鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黄绿鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "柳莺",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕颈钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕头钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "红嘴钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑头穗鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "褐脸雀鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白眶雀鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕头幽鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白冠噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰胁噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "蓝翅希鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "锈额斑翅鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "银耳相思鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑眉鸦雀",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "红头鸦雀",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黄颈凤鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "绒额",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "乌鸫",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "蓝歌鸲",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "紫啸鸫",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "橙胸姬鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "铜蓝鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "纯蓝仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白尾蓝仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕腹仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "大仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "橙腹叶鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "紫色花蜜鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑胸太阳鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "纹背捕蛛鸟",
+          "count": "-"
+        }
+      ],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "ST-13",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2023
+      ],
+      "hasCanonicalCoordinate": false,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [
+        {
+          "year": 2023,
+          "speciesName": "绿翅金鸠",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "灰头绿啄木鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "银胸丝冠鸟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑喉红臀鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黄绿鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黄腹冠鹎",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕颈钩嘴鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕头幽鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白冠噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白喉噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "黑喉噪鹛",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "白尾蓝地鸲",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "紫啸鸫",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "山蓝仙鹟",
+          "count": "-"
+        },
+        {
+          "year": 2023,
+          "speciesName": "棕腹蓝仙鹟",
+          "count": "-"
+        }
+      ],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "ST-21",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2026
+      ],
+      "hasCanonicalCoordinate": true,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "ST-23",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2025,
+        2026
+      ],
+      "hasCanonicalCoordinate": true,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [
+        {
+          "year": 2025,
+          "speciesName": "绿翅金鸠",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "古铜色卷尾",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑冠黄鹎",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红耳鹎",
+          "count": "10"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑喉红臀鹎",
+          "count": "10"
+        },
+        {
+          "year": 2025,
+          "speciesName": "长嘴钩嘴鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑头穗鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄喉穗鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "纹胸鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "褐脸雀鹛",
+          "count": "8"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白眶雀鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "小黑领噪鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白冠噪鹛",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑喉噪鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "银耳相思鸟",
+          "count": "6"
+        },
+        {
+          "year": 2025,
+          "speciesName": "山蓝仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白尾蓝仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白尾蓝地鸲",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "金额叶鹎",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "西南橙腹叶鹎",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "蓝翅叶鹎",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "纹背捕蛛鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑胸太阳鸟",
+          "count": "1"
+        }
+      ],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "ST-26",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2026
+      ],
+      "hasCanonicalCoordinate": true,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "ST-32",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2023,
+        2025
+      ],
+      "hasCanonicalCoordinate": true,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [
+        {
+          "year": 2025,
+          "speciesName": "红喉山鹧鸪",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰孔雀雉",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "绿翅金鸠",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白喉扇尾鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰树鹊",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑额树鹊",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红耳鹎",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕颈钩嘴鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕头钩嘴鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红嘴钩嘴鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑头穗鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "褐脸雀鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰胁噪鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "蓝翅噪鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红尾噪鹛",
+          "count": "6"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白喉姬鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "山蓝仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "铜蓝鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "小斑姬鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰蓝姬鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "纹背捕蛛鸟",
+          "count": "1"
+        }
+      ],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "ST-35",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2026
+      ],
+      "hasCanonicalCoordinate": true,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "ST-38",
+      "villages": [
+        "石梯"
+      ],
+      "years": [
+        2026
+      ],
+      "hasCanonicalCoordinate": true,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "XL-01",
+      "villages": [],
+      "years": [
+        2025
+      ],
+      "hasCanonicalCoordinate": false,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [
+        {
+          "year": 2025,
+          "speciesName": "绿翅金鸠",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "大黄冠啄木鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄冠啄木鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰头绿啄木鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "赤红山椒鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰卷尾",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "小盘尾",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰树鹊",
+          "count": "8"
+        },
+        {
+          "year": 2025,
+          "speciesName": "方尾鹟",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄颊山雀",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄腹冠鹎",
+          "count": "8"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄腹鹟莺",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕颈钩嘴鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕头钩嘴鹛",
+          "count": "6"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑头穗鹛",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "金头穗鹛",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕头幽鹛",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白眶雀鹛",
+          "count": "10"
+        },
+        {
+          "year": 2025,
+          "speciesName": "小黑领噪鹛",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白冠噪鹛",
+          "count": "8"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑喉噪鹛",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红翅薮鹛",
+          "count": "4"
+        },
+        {
+          "year": 2025,
+          "speciesName": "长尾奇鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "绒额䴓",
+          "count": "6"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰背鸫",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑胸鸫",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰翅鸫",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "鹊鸲",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕腹仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "大仙鹟",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "小仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白尾蓝地鸲",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白额燕尾",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "橙胸姬鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕胸蓝姬鹟",
+          "count": "1"
+        }
+      ],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    },
+    {
+      "pondId": "XL-04",
+      "villages": [],
+      "years": [
+        2025
+      ],
+      "hasCanonicalCoordinate": false,
+      "latestInatSync": {
+        "radiusMeters": 50,
+        "syncedAt": null,
+        "observationsCount": 0
+      },
+      "manualSpeciesCounts": [
+        {
+          "year": 2025,
+          "speciesName": "灰孔雀雉",
+          "count": "2"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白喉扇尾鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰卷尾",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "古铜色卷尾",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "发冠卷尾",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "蓝绿鹊",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰树鹊",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "长尾缝叶莺",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑冠黄鹎",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "红耳鹎",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄臀鹎",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑喉红臀鹎",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄绿鹎",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黄腹冠鹎",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "灰眼短脚鹎",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑短脚鹎",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "橙斑翅柳莺",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕颈钩嘴鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕头钩嘴鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑头穗鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "纹胸鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "短尾鹪鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白头鵙鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白眶雀鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "小黑领噪鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白冠噪鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑喉噪鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "黑领噪鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "栗额斑翅鹛",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "银耳相思鸟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "山蓝仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕腹仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕腹蓝仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "小仙鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "白尾蓝地鸲",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "棕胸蓝姬鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "小斑姬鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "玉头姬鹟",
+          "count": "1"
+        },
+        {
+          "year": 2025,
+          "speciesName": "西南橙腹叶鹎",
+          "count": "1"
+        }
+      ],
+      "surveyEvents": [],
+      "notes": [],
+      "attachments": []
+    }
+  ]
+}
