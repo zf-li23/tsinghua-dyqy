@@ -13,7 +13,7 @@ import {
   fetchSpeciesCounts,
   formatObservedDate,
   type InatObservation,
-  type InatProjectOverview,
+  
   type InatSpeciesCount,
 } from '../services/inat'
 import {
@@ -94,7 +94,7 @@ function PondCard({ pond }: { pond: any }) {
 export function SpeciesRecordsPage() {
   const [activeArea, setActiveArea] = useState<InatAreaBounds>(DYQY_INAT_AREAS[0])
 
-  const [project, setProject] = useState<InatProjectOverview | null>(null)
+  
   const [observations, setObservations] = useState<InatObservation[]>([])
   const [mapObservations, setMapObservations] = useState<InatObservation[]>([])
   const [speciesCounts, setSpeciesCounts] = useState<InatSpeciesCount[]>([])
@@ -114,12 +114,12 @@ export function SpeciesRecordsPage() {
       setLoading(true)
       setError(null)
       try {
-        const [projectData, observationData, speciesData] = await Promise.all([
+        const [, observationData, speciesData] = await Promise.all([
           fetchProjectOverview(DYQY_INAT_PROJECT_ID),
           fetchRecentObservations(DYQY_INAT_PROJECT_ID),
           fetchSpeciesCounts(DYQY_INAT_PROJECT_ID),
         ])
-        setProject(projectData)
+        
         setObservations(observationData)
         setSpeciesCounts(speciesData)
       } catch {
@@ -225,15 +225,7 @@ export function SpeciesRecordsPage() {
       .sort((a, b) => b.manualCount + b.inatCount - (a.manualCount + a.inatCount))
   }, [pondViews])
 
-  const stats = useMemo(
-    () => [
-      { label: '累计观察', value: project?.observationsCount ?? '—' },
-      { label: '记录物种', value: project?.speciesCount ?? '—' },
-      { label: '参与观察者', value: project?.observersCount ?? '—' },
-      { label: '项目编号', value: DYQY_INAT_PROJECT_ID },
-    ],
-    [project],
-  )
+
 
   return (
     <>
@@ -250,14 +242,7 @@ export function SpeciesRecordsPage() {
         </p>
       </section>
 
-      <section className="stats-grid">
-        {stats.map((item) => (
-          <article className="stat-tile" key={item.label}>
-            <strong>{item.value}</strong>
-            <span>{item.label}</span>
-          </article>
-        ))}
-      </section>
+      
 
       <section className="card page-article">
         <h3>鸟塘地图（合并图层）</h3>
